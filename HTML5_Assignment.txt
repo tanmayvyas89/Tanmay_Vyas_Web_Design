@@ -1,0 +1,18 @@
+(1) What are the new tags added in HTML5?
+- <article>, <aside>, <audio>, <canvas>, <command>, <datalist>, <details>, <summary>, <embed>, <figure>, <footer>, <header>, <hgroup>, <keygen>, <mark>, <meter>, <nav>, <output>, <progress>, <ruby>, <section>, <time>, <wbr>, <video> are the new tags added in HTML5.
+
+(2) How to embed video and audio in a webpage?
+- To embed audio in HTML, we use the <audio> tag. audios attributes are autoplay, controls, loop, muted, preload and src.
+
+- To embed video in HTML, we use the <video> tag. It contains one or more video sources at a time using <source> tag. It supports MP4, WebM, and Ogg in all modern browsers. videos attributes are autoplay, controls, loop, muted, preload, src, poster, width and height.
+
+(3) Semantic element in HTML5?
+- Semantic elements are the elements that describe their meaning to both the developer as well as to the browser.
+
+- HTML5 provides many Semantic elements-> <article> tag, <header> tag, <nav> tag, <section> tag, <main> tag, <aside> tag, <footer> tag, <table> tag, <form> tag, <figure> and <figcaption> tag, <details> and <summary> tag, <time> tag, <mark> tag.
+
+
+(4) canvas and svg tags?
+- The <canvas> tag in HTML is used to draw graphics on a web page using JavaScript. It can be used to draw paths, boxes, texts, gradients, and adding images. By default, it does not contain borders and text. 
+
+-SVG stands for Scalable Vector Graphics. It basically defines vector-based graphics in XML format. SVG graphics do NOT lose any quality if they are zoomed or resized. Every element and every attribute in SVG files can be animated.
