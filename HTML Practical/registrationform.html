@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <style>
+      .label {
+        text-align: right;
+      }
+
+      .form {
+        margin: 0 auto;
+        width: 60%;
+        height: 500px;
+        /* height: inherit; */
+      }
+
+      .button {
+        padding-left: 300px;
+      }
+/* 
+      tr {
+        padding: 0px;
+      } */
+
+      .div {
+        border: 2px solid red;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(21, 223, 213)">
+    <div class="form">
+      <form action="https://www.amazon.in/">
+        <fieldset>
+          <legend style="text-align: center">
+            <h1>Registration Details</h1>
+          </legend>
+          <table>
+            <tr>
+              <td class="label"><label for="uname">University :</label></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+              <td class="label"><label for="iname">Institute :</label></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+              <td class="label"><label for="branch">Branch :</label></td>
+              <td>
+                <select name="branches" id="">
+                  <option value="">-- select --</option>
+                  <option value="">Python</option>
+                  <option value="">Java</option>
+                </select>
+              </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+              <td class="label"><label for="degree">Degree :</label></td>
+              <td>
+                <select name="dnames" id="">
+                  <option value="">-- select --</option>
+                  <option value="">Frontend Devloper</option>
+                  <option value="">Backend Devloper</option>
+                </select>
+                <input type="radio" name="p" />Pursing
+                <input type="radio" name="p" />Completed
+              </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+              <td class="label"><label for="cpi">Avarage CPI :</label></td>
+              <td><input type="text" /> upto</td>
+              <td><input type="text" /> Th Semester</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+              <td class="label"><label for="exp">Experiance :</label></td>
+              <td><input type="text" /> Years</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+              <td class="label">
+                <label for="weborblog">Your Website or Blog :</label>
+              </td>
+              <td><input type="url" placeholder="" /></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+              <td class="button" colspan="2">
+                <input
+                  type="submit"
+                  value="Register"
+                  style="
+                    background-color: rgb(48, 28, 230);
+                    border: none;
+                    color: white;
+                    padding: 10px;
+                  "
+                />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
