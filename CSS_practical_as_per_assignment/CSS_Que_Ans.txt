@@ -1,0 +1,100 @@
+1)What are the benefits of using CSS?
+
+-> Faster Page Speed. More code means slower page speed. ...
+-> Better User Experience. CSS not only makes web pages easy on the eye, it also allows for user-friendly formatting. ...
+-> Quicker Development Time. ...
+-> Easy Formatting Changes. ...
+-> Compatibility Across Devices.
+
+2)What are the disadvantages of CSS?
+
+-> Confusion due to many CSS levels. Beginners are more vulnerable to this issue. ...
+-> Cross-Browser Issues. Different browsers work differently. 
+
+3)What is the difference between CSS2 and CSS3?
+-> The biggest difference between CSS2 and CSS3 is that CSS3 is now split into different modules.
+ Since each module makes its way through the W3C individually, there's a wider range of browser support. 
+ Make sure you test your CSS3 pages in as many browsers and operating systems as possible to ensure compatibility.
+-> many tags remove in CSS3
+
+4)Name a few CSS style components?
+-> Properties: These are human-readable identifiers that indicate which stylistic features you want to modify. For example, font-size , width , background-color .
+-> Values: Each property is assigned a value. This value indicates how to style the property.
+
+5)What do you understand by CSS opacity?
+->The opacity CSS property sets the opacity of an element. 
+ Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
+
+6) How can the background color of an element be changed?
+->To add background color in HTML, use the CSS background-color property. 
+Set it to the color name or code you want and place it inside a style attribute. 
+Then add this style attribute to an HTML element, like a table, heading, div, or span tag.
+
+7) How can image repetition of the backup be controlled?
+-> To control the repetition of an image in the background, use the background-repeat property.
+ You can use no-repeat value for the background-repeat property if you do not want to repeat an image, in this case, the image will display only once.
+
+8) What is the use of the background-position property?
+->The background-position property sets the starting position of a background image.
+By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.
+
+9) Which property controls the image scroll in the background?
+-> The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.
+
+10) Why should background and color be used as separate properties?
+-> It enhances the legibility of style sheets. The background property is a complex property in CSS, and if it is combined with color, the complexity will further increase.
+
+11) How to center block elements using CSS1?
+-> For centering the element you must set left-margin to auto and right-margin to auto.
+-> after modify CSS center tag removed.
+
+12) How to maintain the CSS specifications?
+-> The CSS specificity is important only when various selectors are affecting the same element. In this case, the browser needs a way to identify the style to be applied to the matching element, and CSS specificity is the way of doing it.
+    *When two or more selectors have equal specificity value, then the latest one considers.
+    Universal selectors () and the inherited values have lower specificity, i.e., 0 specificity.
+    *The style property has a greater specificity value compare to the selectors (except the !important in the stylesheet selector).
+    *The !important alter the selector specificity. When two selectors have equal specificity, then the selector having !important.
+13) What are the ways to integrate CSS as a web page?
+-> CSS can be added to HTML documents in 3 ways:
+ Inline - by using the style attribute inside HTML elements.
+ Internal - by using a <style> element in the <head> section.
+ External - by using a <link> element to link to an external CSS file.
+
+14) What is embedded style sheets?
+->CSS stylesheets can be applied to an HTML document in 3 ways – inline styles, embedded stylesheet, and external stylesheet.
+ Embedded Stylesheet: It allows you to define styles for a particular HTML document as a whole in one place.
+
+15) What are the external style sheets?
+-> An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage.
+ Multiple webpages can use the same link to access the stylesheet. 
+ The link to an external style sheet is placed within the head section of the page.
+
+16) What are the advantages and disadvantages of using external style sheets?
+
+->The advantages of External Style Sheets are as follows :
+
+With the help of External Style Sheets, the styles of numerous documents can be organized from one single file.
+In External Style Sheets, Classes can be made for use on numerous HTML element types in many forms of the site.
+In complex contexts, Methods like selector and grouping can be implemented to apply styles.
+
+->The disadvantages of External Style Sheets are as follows :
+
+An extra download is essential to import style information for each file.
+The execution of the file may be deferred till the external style sheet is loaded.
+While implementing style sheets, we need to test Web pages with multiple browsers in order to check compatibility issues.
+
+
+
+17) What is the meaning of the CSS selector?
+-> A CSS selector is the first part of a CSS Rule. 
+It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them.
+
+
+18. What are the media types allowed by CSS? 
+->  CSS media types are used in media queries, which allow you to apply different styles depending on the output device.
+
+19. What is the rule set? 
+->  A rule, or “rule set,” is an instruction that tells browsers how to display specific elements on an HTML page.
+ A rule set consists of a selector followed by a declaration block. The declaration tells a browser how to draw an element on a selected page.
+While data rules capture an understanding of data quality at the columnar level (as they are executed or associated with one or multiple columns) and provide information about which records meet or do not meet an individual rule, they do not capture how a record within a data source conforms to multiple data rules, for example, how many rules does a specific record break, nor do they identify the overall quality or confidence in a data source. 
+Rule sets provide the capability to achieve this broader, more holistic, view of a data source and its records by executing and evaluating multiple rules together against individual records.
