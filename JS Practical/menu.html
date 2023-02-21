@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            background-color: whitesmoke;
+        }
+
+        .container {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .nav .nav-p {
+            padding: 20px;
+        }
+
+        .nav .nav-f {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav .nav-f .nav_bar {
+            flex: 1;
+        }
+
+        .nav .nav-f .nav-logo {
+            flex: 1;
+        }
+
+        .nav .nav-f .nav_bar ul {
+            list-style: none;
+        }
+
+        .nav .nav-f .nav_bar .menu-list {
+            display: none;
+        }
+
+        .nav .nav-f .nav-toggle {
+            display: none;
+        }
+
+        .nav .nav-f .menu_list_show {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            display: none;
+        }
+
+        .nav .nav-f .nav_bar a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        .nav .nav-f .nav-logo img {
+            height: 80px;
+            width: 80px;
+            border-radius: 20px;
+        }
+
+
+        @media(min-width:768px) {
+            .nav .nav-f .nav_bar {
+                display: none;
+                padding: 0px 10px;
+            }
+
+            .nav .nav-f .nav-toggle {
+                display: block;
+                position: relative;
+            }
+
+            .nav .nav-f .menu_list_show {
+                height: 200px;
+                width: 200px;
+                background-color: aqua;
+                position: absolute;
+                display: flex;
+                top: 50px;
+                right: 0px;
+            }
+
+            .nav .nav-f .menu_list_show .menu-list {
+                flex-direction: column;
+                align-items: center;
+                display: flex;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="container">
+            <div class="nav-p">
+                <div class="nav-f">
+                    <div class="nav-logo">
+                        <a href=""><img src="/img/logo.png" alt=""></a>
+                    </div>
+                    <div class="nav_bar">
+                        <ul class="menu-list">
+                            <!-- <li>
+                                <button><span class="fa-solid fa-xmark" class="close"></span></button>
+                            </li> -->
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Service</a></li>
+                            <li><a href="">Product</a></li>
+                            <li><a href="">Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="nav-toggle">
+                        <button class="dis_menu"><span class="fa-solid fa-bars"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let dis_menu = document.querySelector(".dis_menu");
+        let header_top = document.querySelector('.nav_bar');
+        let cancelbtn = document.querySelector('.close');
+
+        dis_menu.addEventListener('click', function () {
+            header_top.classList.toggle('menu_list_show')
+        });
+
+            //cancelbtn.addEventListener('click', function () {
+              //  btn.classList.remove('menu_list_show')
+           // });
+
+    </script>
+</body>
+
+</html>
