@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>toggle menu</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" ;
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" ;
+    crossorigin="anonymous" ; referrerpolicy="no-referrer" ;></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    $(document).ready(function () {
+      $(".hide-btn").click(function () {
+        $(".nav-menu").toggle(500);
+      });
+    });
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    /* -------------- navogation bar   ------------------ */
+
+    .nav {
+      position: fixed;
+      width: 100%;
+      height: 70px;
+      background-color: black;
+    }
+
+    /* .nav .nav-bar {
+          background-color: blue;
+        } */
+
+    .nav .nav-bar .container {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    .nav .nav-bar .nav-p {
+      padding: 20px;
+    }
+
+    .nav-bar .nav-p .nav-f {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-bar .nav-p .nav-f .logo {
+      flex: 1;
+    }
+
+    .nav-bar .nav-p .nav-f .logo h1 a {
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .nav-bar .nav-p .nav-f .nav-menu {
+      flex: 1;
+    }
+
+    .nav-bar .nav-p .nav-f .nav-menu ul {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .nav-bar .nav-p .nav-f .nav-menu ul li a {
+      color: white;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+
+    .nav-bar .nav-f .hide-btn {
+      display: none;
+    }
+
+    .nav-bar .nav-f .hide-btn .fa-toggle {
+      color: white;
+    }
+
+    /* ==== max-768 =========== */
+
+    @media screen and (max-width: 768px) {
+      .nav .nav-f .nav-menu {
+        display: none;
+      }
+
+      .nav .nav-f .nav-menu .sub-menu {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        height: auto;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        padding: 30px;
+        gap: 10px;
+      }
+
+      .nav .nav-f .hide-btn {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navigation bar -->
+
+  <section id="nav" class="nav">
+    <header class="nav">
+      <div class="nav-bar">
+        <div class="container">
+          <div class="nav-p">
+            <div class="nav-f">
+              <div class="logo">
+                <h1><a href="#">Tanmay Vyas</a></h1>
+              </div>
+              <div class="nav-menu">
+                <ul class="sub-menu">
+                  <li><a href="">HOME</a></li>
+                  <li><a href="">about-us</a></li>
+                  <li><a href="">contact</a></li>
+                  <li><a href="">Help</a></li>
+                  <li><a href="">services</a></li>
+                </ul>
+              </div>
+              <div class="hide-btn">
+                <span class="fa-solid fa-bars fa-toggle"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+</body>
+
+</html>

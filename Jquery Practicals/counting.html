@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counting</title>
+    <script>
+        let number = setInterval(check_num , 100)
+        let start_num = 1
+
+        function check_num(){
+        let count = document.getElementById('counts')
+        count.innerHTML = ++start_num;
+
+            if(start_num == 100){
+                clearInterval(number)
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 id="counts"></h1>
+</body>
+</html>

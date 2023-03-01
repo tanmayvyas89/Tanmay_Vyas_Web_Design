@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carousel</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <!-- owl carousel css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- owl carousel js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: false,
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 1000,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            576: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .head {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .head h4 {
+        color: orange;
+        font-size: 13px;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        padding: 20px 0px;
+      }
+
+      .head h1 {
+        font-family: sans-serif;
+        text-transform: capitalize;
+      }
+
+      .owl-carousel {
+        display: flex;
+      }
+
+      .quote {
+        font-size: 30px;
+        color: orange;
+      }
+
+      .item{
+        padding: 20px;
+      }
+
+      .para {
+        font-family: sans-serif;
+        font-size: 15px;
+        padding: 20px 0px;
+      }
+      .c-flex {
+        display: flex;
+        gap: 20px;
+      }
+      .image {
+        width: 60px !important;
+        height: 60px;
+        border-radius: 50%;
+      }
+
+      .det{
+        padding: 20px 20px;
+      }
+
+      .det h4 {
+        font-family: sans-serif;
+      }
+
+      .det p {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="head">
+      <h4>what our client say</h4>
+      <h1>testimonials</h1>
+    </div>
+    <div class="owl-carousel">
+      <div class="item">
+        <div class="c-data">
+          <span class="fa-solid fa-quote-left quote"></span>
+          <p class="para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
+            sint? Voluptatibus temporibus alias nulla ratione sunt, accusamus
+            dolorem excepturi ab!
+          </p>
+          <div class="c-flex">
+            <img src="avtar.png" alt="" class="image" />
+            <div class="det">
+              <h4>Tanmay vyas</h4>
+              <p>Surat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="c-data">
+          <span class="fa-solid fa-quote-left quote"></span>
+          <p class="para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
+            sint? Voluptatibus temporibus alias nulla ratione sunt, accusamus
+            dolorem excepturi ab!
+          </p>
+          <div class="c-flex">
+            <img src="avtar.png" alt="" class="image" />
+            <div class="det">
+              <h4>Tanmay Vyas</h4>
+              <p>Surat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="c-data">
+          <span class="fa-solid fa-quote-left quote"></span>
+          <p class="para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
+            sint? Voluptatibus temporibus alias nulla ratione sunt, accusamus
+            dolorem excepturi ab!
+          </p>
+          <div class="c-flex">
+            <img src="avtar.png" alt="" class="image" />
+            <div class="det">
+              <h4>Tanmay Vyas</h4>
+              <p>Surat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
